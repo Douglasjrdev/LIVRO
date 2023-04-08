@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'LIBRY' ;
+    src: url('../fontes/SimpleHandmade.otf') format('opentype');
+}
+:root{
+    --fonte-principal:'LIBRY';
+}
+
+
+
+
+body{
+    background-color:rgb(34, 34, 34);
+    max-width: 1200px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 400px;
+    
+
+}
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between ;
+}
+ #title{
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+    line-height:10px ;
+    font-size: 2em;
+    
+}
+li{
+    display: inline-block;
+    margin: 20px;
+    
+}
+a{
+   font-size: 18px;
+    color:white ;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 228, 196);
+    transition: 0.5s all;
+}
+#inscreva{
+    border: 2px solid bisque;
+    padding: 10px;
+    border-radius: 15px;
+}
+#inscreva:hover{
+    background-color: rgba(255, 228, 196, 0.529);
+    color: white;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+}
+h2{
+    font-size: 56px;
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+}
+article{
+   
+    margin-left: 39%;
+}
+form > p{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+input[type="submit"]{
+    width:90px ;
+    height:50% ;
+    color: white;
+    background-color: rgba(255, 228, 196, 0.529);
+}
+input[type="submit"]:hover{
+    background-color:rgba(255, 228, 196, 0.656);
+    cursor: pointer;
+
+}
+footer{
+    margin-top: 50px;
+   text-indent: 10px;
+}
+
+
+
